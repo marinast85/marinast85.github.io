@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+    * Jquery: botão scroll - linha 191 botão scroll - função script.js
+    * CSS: linha 196 a 220 rodapé com estilização arquivo style.css linhas 203 - 244
+    * HTML: article (pagina quem somos) linhas 92 a 100 / aside (pagina index) linhas 103 - 158
+ -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="./bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icone site compra Footer -->
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <title>Projeto BootStrap</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="row">
+            <div class="col-4" id="logo_header">
+                <a href="index.html"><img src="./imagens/logo2.png" alt="logo"></a>
+            </div>
+            <div class="col-4 d-flex align-items-center">
+                <h2 id="h2_header">Beachwear is for everyone</h2>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content: center" id="icones">
+                <div>
+                    <a href="#"><img src="./imagens/carrinho-de-supermercado.png" alt="carrinho_compra" class="icones1"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="./imagens/contato.png" alt="contato" class="icones2"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nossa Moda</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="biquinis.html">Biquinis</a>
+                        <a class="dropdown-item" href="maios.html">Maiôs</a>
+                        <a class="dropdown-item" href="acessorios.html">Acessórios</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quemsomos.html">Quem Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="parceiros.html">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formulario.html">Cadastro</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar"
+                    id="form_input">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit" id="form_button"> Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- meio do corpo do meu site -->
+
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-6 container_main">
+                <h5 id="main_titulo">Soul Wear</h5>
+                <img src="imagens/bikini1.jpg" alt="" class="img-fluid img_main">
+                <p class="paragrafo_main">Nós queremos trazer beleza e leveza aos nossos cliente. Nosso principio é
+                    qualidade e inclusão de
+                    todos os corpos no periodo veraneio brasileiro.</p>
+                <p class="paragrafo_main">Venha conhecer nossos produtos e desfrutar do seu melhor verão.</p>
+            </div>
+            <aside class="col-6">
+                <h4 id="aside_titulo">Beach Sales</h4>
+                <div class="cards_1 d-flex ">
+                    <div class="card aside_card" style="width: 20vw; height: 40vh;">
+                        <img class="card-img-top img-fluid img_promo" src="./imagens/promocao1.png"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Colar Calda Baleia</p>
+                            <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                    </div>
+                    <div class="card aside_card" style="width: 20vw; height: 40vh;">
+                        <img class="card-img-top img-fluid img_promo" src="./imagens/promocao2.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Colar Concha</p>
+                            <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards_2 d-flex">
+                    <div class="card aside_card img-fluid" style="width: 20vw; height: 40vh;">
+                        <img class="card-img-top img-fluid img_promo" src="./imagens/promocao3.png"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Brinco Prata Concha</p>
+                            <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                    </div>
+                    <div class="card aside_card" style="width: 20vw; height: 40vh;">
+                        <img class="card-img-top img-fluid img_promo" src="./imagens/promocao4.png"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Conjunto Colares Prata</p>
+                            <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards_3 d-flex">
+                    <div class="card aside_card" style="width: 20vw; height: 40vh;">
+                        <img class="card-img-top img-fluid img_promo" src="./imagens/promocao8.png"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Conjunto Colares Conchas</p>
+                            <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                    </div>
+                    <div class="card aside_card" style="width: 20vw; height: 40vh;">
+                        <img class="card-img-top img-fluid img_promo" src="./imagens/promacao7.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Colar Rainbow</p>
+                            <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Inicio Carousel -->
+
+    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel" data-interval="2000">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block" src="./imagens/imgCarousl4.jpg" alt="Primeiro Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block" src="./imagens/imgCarosel2.png" alt="Segundo Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block" src="./imagens/Frame 3.png" alt="Terceiro Slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+
+    <!-- Botão subir topo inicio -->
+    <button onclick="topFunction()" id="myBtn" title="Topo">Topo</button>
+
+    <!-- Rodapé do site -->
+
+    <footer id="rodape">
+        <div class="container">
+            <div class="logo"><img src="./imagens/logo2.png" alt="" class="img-fluid img_logo"></div>
+            <div class="address">
+                <h5>Endereço</h5>
+                <p>Praia Campeche</p>
+                <p>Florianópolis - SC</p>
+            </div>
+            <div class="copyright"> &copy;Beachwear</div>
+            <div class="payment">
+                <h6>Formas de Pagamento</h6>
+                <span class="iconify" data-icon="simple-icons:picpay"></span>
+                <span class="iconify" data-icon="whh:visa"></span>
+                <span class="iconify" data-icon="brandico:mastercard"></span>
+            </div>
+            <div class="social_media">
+                <h6>Redes Sociais</h6>
+                <a href="https://www.facebook.com/marinast85" target="_blank"><span class="iconify"
+                        data-icon="akar-icons:facebook-fill"></span></a>
+                <a href="https://www.instagram.com/marinast85/" target="_blank"><span class="iconify"
+                        data-icon="akar-icons:instagram-fill"></span></a>
+                <a href="http://api.whatsapp.com/send?phone=5511939305757" target="_blank"><span class="iconify" data-icon="akar-icons:whatsapp-fill"></span></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="./bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+
+    <!-- Javascript -->
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

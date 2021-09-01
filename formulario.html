@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="./bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icone site compra Footer -->
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <title>Projeto BootStrap</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="row">
+            <div class="col-4" id="logo_header">
+                <a href="index.html"><img src="./imagens/logo2.png" alt="logo"></a>
+            </div>
+            <div class="col-4 d-flex align-items-center">
+                <h2 id="h2_header">Beachwear is for everyone</h2>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content: center" id="icones">
+                <div>
+                    <a href="#"><img src="./imagens/carrinho-de-supermercado.png" alt="carrinho_compra" class="icones1"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="./imagens/contato.png" alt="contato" class="icones2"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nossa Moda</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="biquinis.html">Biquinis</a>
+                        <a class="dropdown-item" href="maios.html">Maiôs</a>
+                        <a class="dropdown-item" href="acessorios.html">Acessórios</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quemsomos.html">Quem Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="parceiros.html">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formulario.html">Cadastro</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar"
+                    id="form_input">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit" id="form_button"> Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Formulario -->
+
+    <main class="container_formulario">
+        <form>
+            <div class="row">
+                <div class="col">
+                    <label for="nome">Nome</label>
+                  <input type="text" class="form-control" placeholder="Nome" id="nome" onblur="validaNome(this)" required>
+                </div>
+                <div class="col">
+                    <label for="inpuSobrenome">Sobrenome</label>
+                  <input type="text" class="form-control" placeholder="Sobrenome" id="sobrenome" onblur="validaSobrenome(this)" required>
+                </div>
+              </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="email" id="email">Email</label>
+                    <input type="email" class="form-control" placeholder="Email" id="email" onblur="validaEmail(this)" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="senha" id="senha">Senha</label>
+                    <input type="password" class="form-control" placeholder="Senha" id="senha" onblur="validaSenha(this)" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Endereço</label>
+                <input type="text" class="form-control" id="adress" placeholder="Rua Praiana, nº 0">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">Cidade</label>
+                    <input type="text" class="form-control" id="cidade">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputEstado">Estado</label>
+                    <select id="inputEstado" class="form-control">
+                        <option selected>Estado</option>
+                        <option valeu="1">AC</option>
+                        <option value="2">AL</option>
+                        <option value="3">AP</option>
+                        <option value="4">AM</option>
+                        <option value="5">BA</option>
+                        <option value="6">CE</option>
+                        <option value="7">DF</option>
+                        <option value="8">ES</option>
+                        <option value="9">GO</option>
+                        <option value="10">MA</option>
+                        <option value="11">MT</option>
+                        <option value="12">MS</option>
+                        <option value="13">MG</option>
+                        <option value="14">PA</option>
+                        <option value="15">PB</option>
+                        <option value="16">PR</option>
+                        <option value="17">PE</option>
+                        <option value="18">PI</option>
+                        <option value="19">RJ</option>
+                        <option value="20">RN</option>
+                        <option value="21">RS</option>
+                        <option value="22">RO</option>
+                        <option value="23">RR</option>
+                        <option value="24">SC</option>
+                        <option value="25">SP</option>
+                        <option value="26">SE</option>
+                        <option value="27">TO</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputCEP">CEP</label>
+                    <input type="text" class="form-control" id="inputCEP">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Declaro que aceito e estou de acordo com os termos de compromisso
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-outline-info">Enviar Dados</button>
+            <button type="reset" class="btn btn-outline-info">Limpar</button>
+        </form>
+    </main>
+    <!-- Footer -->
+
+    <footer id="rodape">
+        <div class="container">
+            <div class="logo"><img src="./imagens/logo2.png" alt="" class="img-fluid img_logo"></div>
+            <div class="address">
+                <h5>Endereço</h5>
+                <p>Rua da Paraia, n° 1</p>
+                <p>Bairro: Beira Mar</p>
+                <p>Cidade: Litoral</p>
+            </div>
+            <div class="copyright"> &copy;Beachwear</div>
+            <div class="payment">
+                <h6>Formas de Pagamento</h6>
+                <span class="iconify" data-icon="simple-icons:picpay"></span>
+                <span class="iconify" data-icon="whh:visa"></span>
+                <span class="iconify" data-icon="brandico:mastercard"></span>
+            </div>
+            <div class="social_media">
+                <h6>Redes Sociais</h6>
+                <a href="https://www.facebook.com/marinast85" target="_blank"><span class="iconify"
+                        data-icon="akar-icons:facebook-fill"></span></a>
+                <a href="https://www.instagram.com/marinast85/" target="_blank"><span class="iconify"
+                        data-icon="akar-icons:instagram-fill"></span></a>
+                <a href="http://api.whatsapp.com/send?phone=5511939305757" target_blank><span class="iconify" data-icon="akar-icons:whatsapp-fill"></span></a>
+            </div>
+        </div>
+    </footer>
+
+
+  
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="./bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+
+      <!-- Optional JavaScript -->
+      <script src="./script.js"></script>
+
+    
+
+</body>
+
+</html>

@@ -1,0 +1,357 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;   
+}
+
+.body{
+    background-image: linear-gradient(209,198,133,100);
+}
+
+/* inicio site */
+#pesquisa{
+    border-radius: 10vh;
+}
+
+#botaoPesquisa{
+    border-radius: 10vh;
+}
+
+/* #logo{
+    width: 15vw;
+    height: 20vh;
+} */
+
+#form_input , #form_button{
+    border-radius: 25vh;
+}
+
+#h2_header{
+    font-size: 52px;
+    color: #ff7400;
+    font-style: italic;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+#icones{
+ margin-left: 12vw;   
+}
+.icones1{
+    margin-left: 4vw;
+    width: 3vw;
+    height: 5vh;
+}
+
+.icones2{
+    margin-left: 4vw;
+    width: 3vw;
+    height: 5vh;
+}
+.card-body{
+    opacity: 1;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+/* Main */
+.container_main{
+    padding-top: 15vh;
+}
+
+.img_main{
+    overflow: hidden;
+}
+
+.img_main img{
+    max-width: 100%;
+    -moz-transform: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.img_main:hover{
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    box-shadow: 0 0 40px -10px rgba(0,0,0.75,0.75);
+}
+
+.img_promo{
+    overflow: hidden;
+}
+
+.img_promo img{
+    max-width: 100%;
+    -moz-transform: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.img_promo:hover{
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+    box-shadow: 0 0 40px -10px rgba(0,0,0.75,0.75);
+}
+
+#main_titulo{
+    text-align: center;
+    font-size: 52px;
+    color: #ff7400;
+    font-style: italic;
+    font-family: 'Dancing Script', cursive;
+}
+
+.img_main{
+    height: 50vh;
+    width: 25vw;
+}
+
+.paragrafo_main{
+    text-align: center;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
+.card-img-top{
+    border-radius: 1vh;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* Carousel */
+.carousel-inner img{
+    height: 1%;
+    width: 100%;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/* botão TOPO */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 2vh;
+    right: 2vh;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(226, 150, 57);;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 5vh;
+    border-radius: 50%;
+  }
+  
+#myBtn:hover {
+    background-color: #555;
+} 
+
+/* ----------------------------------------------------------------------------------------------- */
+/* Biquinis Maios */
+
+.Pvalores{
+    font-family:'Josefin Slab', serif;
+    font-size: 3.5vh;
+    font-style: normal;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    color: #141414;
+}
+
+#itens_venda1{ 
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: #141414;
+    text-decoration: none;
+}
+
+#itens_venda1 img{
+    border-radius: 15%;
+}
+
+#itens_venda2{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: #141414;
+}
+
+#itens_venda2 img{
+    border-radius: 15%;
+}
+
+.img_bikini{
+    overflow: hidden;
+}
+
+.img_bikini img{
+    max-width: 100%;
+    -moz-transform: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.img_bikini:hover{
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+    box-shadow: 0 0 40px -10px rgba(0,0,0.75,0.75);
+}
+
+.img_maio{
+    overflow: hidden;
+}
+
+.img_maio img{
+    max-width: 100%;
+    -moz-transform: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.img_maio:hover{
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+    box-shadow: 0 0 40px -10px rgba(0,0,0.75,0.75);
+}
+
+.img_acessorios{
+    overflow: hidden;
+}
+
+.img_acessorios img{
+    max-width: 100%;
+    -moz-transform: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.img_acessorios:hover{
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+    box-shadow: 0 0 40px -10px rgba(0,0,0.75,0.75);
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+/* Sales Aside */
+
+#aside_titulo{
+    font-size: 52px;
+    color: #ff7400;
+    font-style: italic;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    border: none;
+}
+
+.img_promo{
+    width: 17vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+.btn-primary {
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.aside_card{
+    border: none;
+}
+
+.card-text{
+    text-align: center;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/* Footer */
+
+.container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 2vw; 
+  grid-template-areas: 
+    "logo address copyright payment social_media"; 
+}
+.logo { grid-area: logo; }
+.address { grid-area: address; }
+.copyright { grid-area: copyright; }
+.payment { grid-area: payment; }
+.social_media { grid-area: social_media;
+}
+
+.logo img{
+    margin-top: 5vh;
+    width: 20vw;
+    height: 20vh;
+}
+
+.address{
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 2vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.copyright{
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.payment{
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 2vh;
+}
+
+.social_media{
+    margin-top: 10vh;
+}
+/*-------------------------------------------------------------------------------------------- */
+/* Formulario */
+
+.container_formulario{
+    margin-top: 5vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* Serviços */
+#localidade{
+    margin-left: 5vh;
+    margin-top: 5vh;
+}
+
+#mapa{
+   margin-left: auto;
+   margin-bottom: 9vh;
+}
+
+#txt-atendimento{
+    margin-top: 5vh;
+    font-size: smaller;
+}
